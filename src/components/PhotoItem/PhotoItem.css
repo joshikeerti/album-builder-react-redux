@@ -1,0 +1,22 @@
+.photo-item {
+    border: solid 1px #efefef;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.5em 0;
+    padding: 0.5em 0.5em 1em 0.5em;
+    position: relative;
+    width: 100%;
+}
+
+.photo-item img {
+    width: 100%;
+}
+
+.add-button {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.fa-folder {
+    color: green;
+}

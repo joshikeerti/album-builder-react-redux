@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0 50px;
+  font-family: sans-serif;
+}
+h1 {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+.logo {
+  padding-right: 15px;
+  width: 100px;
+  margin-right: 5px;
+  vertical-align: inherit;
+}
+
+.lnr-camera {
+  font-size: 40px;
+  color: #a9a184;
+}
+
+.navbar-nav .nav-item {
+    padding: 15px 0;
+}
+
+.navbar {
+  border-radius: 0;
+  padding: 20px 0;
+  border-bottom: solid 1px #eee;
+}
+
+.navbar-brand {
+  border-right: 1px solid #bcbcaa;
+  padding-right: 20px;
+}
+.navbar-brand > img {
+    display: inline-block;
+}
+
+.custom-nav-item {
+  font-weight: bold;
+  color: #a9a184;
+}
+
+.default-button {
+  background: #fff;
+  border: solid 1px #999;
+  border-radius: 3px;
+}
+
+.error-text {
+  color: red;
+}

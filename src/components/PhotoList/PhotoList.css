@@ -1,0 +1,87 @@
+.photo-list {
+  max-width: 1200px;
+  line-height: 0;
+
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+
+  margin: auto;
+  padding: 10px 0 30px 0;
+  overflow: auto;
+}
+
+.photo-frame {
+  border: solid 1px #efefef;
+  margin: 10px;
+}
+
+
+
+.imageBox {
+  -webkit-animation: fade-in 1.5s; /* Safari 4+ */
+  -moz-animation:    fade-in 1.5s; /* Fx 2+ */
+  -o-animation:      fade-in 1.5s; /* Opera 12+ */
+  animation:         fade-in 1.5s;
+}
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; transform: scale(0.5);}
+  100% { opacity: 1; transform: scale(1);}
+}
+@-moz-keyframes fade-in {
+  0%   { opacity: 0; transform: scale(0.5);}
+  100% { opacity: 1; transform: scale(1);}
+}
+@-o-keyframes fade-in {
+  0%   { opacity: 0; transform: scale(0.5);}
+  100% { opacity: 1; transform: scale(1);}
+}
+@keyframes fade-in {
+  0%   { opacity: 0; transform: scale(0.5);}
+  100% { opacity: 1; transform: scale(1);}
+}
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  .searchInput {
+    width: 300px;
+  }
+
+  .photo-list {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .photo-list {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .photo-list {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+
+.photo-action {
+  margin-top: -10px;
+  background-color: #fff;
+    padding: 10px 0;
+}
