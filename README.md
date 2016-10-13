@@ -27,10 +27,10 @@ Flickr API: https://www.flickr.com/services/api
 * Firefox 47.0.1
 
 
-#### Design Decisions
+
 * The app is built using react and redux
-* Redux is used as the state container which helps keep all the app state in one place and makes it easier to reason and debug the app
-* Client side routing is handled using react-router
+* Redux is used as the state management container
+* Javascript style guide used - http://standardjs.com
 
 #### TODOs 
 
