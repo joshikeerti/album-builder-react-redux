@@ -4,11 +4,10 @@ import './Search.css';
 class Search extends Component {
 
   handleChange = (evt) => {
-    const term = evt.target.value;
-    this.setState({searchTerm: term});
-
+    const term = evt.target.value
+    this.setState({searchTerm: term})
     if (term.length > 2) {
-      this.props.onSearchTermChange(term);
+      this.props.onSearchTermChange(term)
     }
   }
 

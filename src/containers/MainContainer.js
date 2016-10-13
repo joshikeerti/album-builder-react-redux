@@ -1,34 +1,33 @@
-import React, { Component } from 'react';
-import PhotoList from '../components/PhotoList/PhotoList';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as Actions from '../actions';
-import Search from '../components/Search/Search';
+import React, { Component } from 'react'
+import PhotoList from '../components/PhotoList/PhotoList'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import * as Actions from '../actions'
+import Search from '../components/Search/Search'
 
 class MainContainer extends Component {
-  render() {
+  render () {
     return (
       <div>
-        <div className="row">
-            <Search onSearchTermChange={this.props.actions.requestPhotosByTag}/>
+        <div className='row'>
+          <Search onSearchTermChange={this.props.actions.requestPhotosByTag} />
         </div>
-            <PhotoList photos={this.props.photos} isLoading={this.props.photos.isLoading}/>
+        <PhotoList photos={this.props.photos} isLoading={this.props.photos.isLoading} />
       </div>
     )
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return {
     photos: state.photos
-  };
+  }
 }
 
-
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
   return {
     actions: bindActionCreators(Actions, dispatch)
-  };
+  }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(MainContainer)

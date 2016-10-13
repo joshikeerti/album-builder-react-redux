@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { reduxForm} from 'redux-form';
-import * as Actions from '../actions';
+import React, { Component } from 'react'
+import { reduxForm} from 'redux-form'
+import * as Actions from '../actions'
 import { browserHistory } from 'react-router'
 
 const validate = values => {

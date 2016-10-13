@@ -1,20 +1,20 @@
-import React from 'react';
-import { reduxForm } from 'redux-form';
+import React from 'react'
+import { reduxForm } from 'redux-form'
 
 class CreateAlbumForm extends React.Component {
-  render() {
+  render () {
     const { fields: {albumName}, handleSubmit } = this.props
     return (
       <div>
         <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="albumName">Album Name</label>
-          <input type="text" {...albumName}/>
-        </div>
-        <button onClick={handleSubmit} type="submit">Create Album</button>
-      </form>
+          <div>
+            <label htmlFor='albumName'>Album Name</label>
+            <input type='text' {...albumName} />
+          </div>
+          <button onClick={handleSubmit} type='submit'>Create Album</button>
+        </form>
       </div>
-    );
+    )
   }
 }
 
@@ -22,6 +22,6 @@ class CreateAlbumForm extends React.Component {
 CreateAlbumForm = reduxForm({
   form: 'createAlbum',
   fields: ['albumName']
-})(CreateAlbumForm);
+})(CreateAlbumForm)
 
-export default CreateAlbumForm;
+export default CreateAlbumForm

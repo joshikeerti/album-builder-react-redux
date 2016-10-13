@@ -1,11 +1,11 @@
-import React from 'react';
-import PhotoItemContainer from '../../containers/PhotoItemContainer';
-import './PhotoList.css';
+import React from 'react'
+import PhotoItemContainer from '../../containers/PhotoItemContainer'
+import './PhotoList.css'
 
 const PhotoList = (props) => {
   const photoItems = props.photos.photos.map((photo) => {
-    const IMAGE_URL = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`;
-    return(
+    const IMAGE_URL = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`
+    return (
       <PhotoItemContainer
         key={photo.id}
         id={photo.id}
@@ -15,21 +15,19 @@ const PhotoList = (props) => {
         server={photo.server}
         farm={photo.farm}
         />
-    );
-  });
+    )
+  })
 
   return (
-    <div className="photo-list">
+    <div className='photo-list'>
       <div>
-        {props.isLoading ?
-          <p>
-            Loading ...
-          </p>
+        {props.isLoading
+          ? <p> Loading ...</p>
           : null }
-        </div>
-        {photoItems}
       </div>
-    );
-  };
+      {photoItems}
+    </div>
+    )
+}
 
-export default PhotoList;
+export default PhotoList
