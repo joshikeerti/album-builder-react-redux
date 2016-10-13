@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from '../logo.png';
 import { Link } from 'react-router';
 
 class HeaderContainer extends Component {
@@ -12,7 +11,7 @@ class HeaderContainer extends Component {
       });
     return (
           <nav className="navbar navbar-light">
-            <Link className="navbar-brand" to="/">snap<span className="lnr lnr-camera"></span></Link>
+            <Link className="navbar-brand" to="/"><span className="lnr lnr-camera"></span></Link>
           <ul className="nav navbar-nav">
           {(albums.length > 0) ?
             <li className="nav-item">{albums}</li> :
