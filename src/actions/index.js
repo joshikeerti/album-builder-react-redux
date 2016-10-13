@@ -11,15 +11,6 @@ export const CREATE_ALBUM = 'CREATE_ALBUM';
 const API_KEY = '4f874a92ad47b0be8d17800d5f98f058';
 const API_BASE_URL = `https://api.flickr.com/services/rest/`;
 
-// export function requestPhotosByTag(term = null) {
-//   const API_ENDPOINT = `${API_BASE_URL}?method=flickr.photos.search&media=photos&tag_mode=all&sort=interestingness-desc&api_key=${API_KEY}&tags=${term}&per_page=500&format=json&nojsoncallback=1`
-//   const data = request.get(API_ENDPOINT);
-//   return {
-//     type: REQUEST_PHOTOS_BY_TAG,
-//     payload: data
-//   }
-// }
-
 export function requestPhotosByTag(term = null) {
   const API_ENDPOINT = `${API_BASE_URL}?method=flickr.photos.search&media=photos&tag_mode=all&sort=interestingness-desc&api_key=${API_KEY}&tags=${term}&per_page=200&format=json&nojsoncallback=1`
   return (dispatch) => {

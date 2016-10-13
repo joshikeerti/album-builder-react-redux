@@ -1,13 +1,11 @@
 import React from 'react';
 import '../PhotoItem/PhotoItem.css';
 
-class AlbumItem extends React.Component {
-  render() {
+const AlbumItem = (props) => {
     return (
       <div className="photo-item">
-        <img src={this.props.url} alt={this.props.title}  />
+        <img src={props.url} alt={props.title}  />
       </div>
     );
   }
-}
 export default AlbumItem;
