@@ -1,7 +1,7 @@
 #  Photo Album Builder
-Uses Flickr API to search for photos 
-Allows the user create a photo album.
-The user can search for photos by location or tags and manually add them to the album.
+* Uses Flickr API to search for photos 
+* Allows the user create a photo album.
+* The user can search for photos by location or tags and manually add them to the album.
 
 Flickr API: https://www.flickr.com/services/api
 
